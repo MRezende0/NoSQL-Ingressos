@@ -3,7 +3,7 @@ import redis
 
 try:
     creds_provider = redis.UsernamePasswordCredentialProvider("default", "redispw")
-    r = redis.Redis(host="localhost", port=32769, credential_provider=creds_provider)
+    r = redis.Redis(host="localhost", port=32768, credential_provider=creds_provider)
     r.ping()
     print("Conexão bem sucedida")
 except:
