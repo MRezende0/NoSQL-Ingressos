@@ -36,6 +36,7 @@ def proximo():
     print("-------------------------\n")
     remover = r.lpop("fila")
     print(f"O cliente atendido foi {remover.decode()}")
+    print("-------------------------\n")
 
 
 while True:
@@ -62,4 +63,5 @@ while True:
         print("Você selecionou:\nSAIR")
         print("-------------------------\n")
         print("Obrigado. Volte sempre!")
+        print("-------------------------\n")
         break
